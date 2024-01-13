@@ -1,7 +1,7 @@
 # **MachineLearningTemplate**
 
 ## Overview
-This project features a suite of three interconnected Python scripts, each dedicated to a specific phase of the Extract, Transform, Load (ETL) process. Designed for simplicity and efficiency, these scripts facilitate the extraction of data from databases, perform necessary transformations for machine learning readiness, and load the data into a model for analysis or prediction. This project is well-suited for a variety of machine learning applications, particularly those involving data-driven insights.
+This project features a suite of four interconnected Python scripts, each dedicated to a specific phase of the Extract, Transform, Load (ETL) process. Designed for simplicity and efficiency, these scripts facilitate the extraction of data from databases, perform necessary transformations for machine learning readiness, load the data into a model for analysis or prediction, and include a script for loading test data into a database. This project is well-suited for a variety of machine learning applications, particularly those involving data-driven insights.
 
 ## 1. Data Extraction
 **Functionality**: Extracts data from a specified database, ensuring a reliable and consistent data source for further processing.
@@ -33,6 +33,16 @@ This project features a suite of three interconnected Python scripts, each dedic
 
 **Use Case**: Perfect for machine learning practitioners looking to feed processed data into models for prediction, classification, or other analytical purposes.
 
+## 4. CSV Test Data to Database (`csvtestdata2database.py`)
+**Functionality**: Automates the loading of provided test data into a specified database.
+
+**Features**:
+  - Automatically loads test data CSV files into the `SolanaHistorical` database.
+  - Requires placing the CSV file in the `C:/temp` folder on your computer for initial setup.
+  - Customizable file path and database name for different environments.
+
+**Use Case**: Ideal for quickly setting up test environments or demonstrations, ensuring that the application has the necessary data for initial testing and evaluations.
+
 ## Technical Stack
 - **Languages**: Python
 - **Libraries/Frameworks**: Depending on the specific requirements (e.g., Pandas for data manipulation, SQLAlchemy for database interaction)
@@ -44,10 +54,11 @@ Follow these steps to set up and run the ETL pipeline:
 1. **Prerequisites**:
    - Ensure Python is installed on your system.
    - Install necessary Python libraries as per your project's requirements.
+   - Add the test CSV file to `C:/temp` and ensure a database named `SolanaHistorical`  is created for the `csvtestdata2database.py` script. 
 
 2. **Running the Scripts**:
    - Configure each script according to your database and model specifications.
-   - Execute the scripts in order: first data extraction, followed by transformation, and finally loading into the model.
+   - Execute the scripts in order: first data extraction, followed by transformation, loading into the model, and finally loading the test data.
 
 ## Contribution and Customization
 This project is open for contributions and can be customized to fit a wide range of ETL needs in different machine learning contexts. You are encouraged to fork, modify, and adapt these scripts to meet your specific data processing and analysis requirements.
