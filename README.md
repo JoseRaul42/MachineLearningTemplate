@@ -53,6 +53,8 @@ Follow these steps to set up and run the ETL pipeline:
 
 1. **Prerequisites**:
    - Ensure Python is installed on your system.
+   - Set Environment variable DBpassword as you Databases actual password. This is good security 
+     practice.
    - Install necessary Python libraries as per your project's requirements.
    - Add the test CSV file to `C:/temp` and ensure a database named `SolanaHistorical`  is created for the `csvtestdata2database.py` script. 
 
