@@ -33,8 +33,8 @@ This project features a suite of four interconnected Python scripts, each dedica
 
 **Use Case**: Perfect for machine learning practitioners looking to feed processed data into models for prediction, classification, or other analytical purposes.
 
-## 4. CSV Test Data to Database (`csvtestdata2database.py`)
-**Functionality**: Automates the loading of provided test data into a specified database.
+## 4. CSV Test Data to Database 
+**Functionality**: `csvtestdata2database.py` Automates the loading of provided test data into a specified database.
 
 **Features**:
   - Automatically loads test data CSV files into the `SolanaHistorical` database.
