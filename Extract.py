@@ -15,6 +15,6 @@ def fetch_data_from_db():
     engine = create_engine(connection_string)
 
     # SQL query
-    query = "SELECT volume, to_char(to_timestamp(timestamp), 'YYYY-MM-DD HH24:MI:SS') AS formatted_timestamp FROM public.solana_historical_data"
+    query = "SELECT volume, to_char(to_timestamp(timestamp), 'YYYY-MM-DD HH24:MI:SS') AS formatted_timestamp FROM public.solana_historical_data" #This query is what I was using to call and transform the data I pulled from the db you will need to change specific to your database name and data.
     data = pd.read_sql(query, engine)
     return data
